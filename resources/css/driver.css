@@ -1,0 +1,282 @@
+/* Base variables */
+:root {
+  --gold: #d4af37;
+  --dark: #0d0d0d;
+  --panel: #6e6c6c;
+}
+
+/* TWO-TONE JUMBOTRON */
+.jumbotron {
+  display: flex;
+  min-height: calc(100vh - 72px);
+  background: linear-gradient(to right, var(--dark) 50%, #ffffff 50%);
+}
+
+/* LEFT */
+.jumbotron-left {
+  flex: 2;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  background-color: var(--dark);
+}
+
+.quote {
+  max-width: 460px;
+  text-align: left;
+}
+
+.quote h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: var(--gold);
+}
+
+.quote p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* RIGHT */
+.jumbotron-right {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.jumbotron-container h1 {
+  color: #d4af37;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.driver-reg-form {
+  background: #6e6c6c;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(212, 175, 55, 0.25);
+  text-align: center;
+  border: 1px solid #d4af37;
+  position: relative;
+}
+
+/* Form shell */
+.form-shell {
+  width: 100%;
+  max-width: 720px;
+  background: #6e6c6c;
+  border-radius: 10px;
+  padding: 22px;
+  box-shadow: 0px 0px 15px rgba(212, 175, 55, 0.25);
+  border: 1px solid #d4af37;
+}
+
+/* Progress top */
+.progress-top {
+  margin-bottom: 14px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.step-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #444;
+}
+
+.step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+/* progress bar */
+.progress-bar {
+  height: 8px;
+  background: #eee;
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), #e6c76c);
+  width: 0%;
+  transition: width 300ms ease;
+}
+
+/* Section heading */
+.section-heading {
+  margin: 6px 0 12px;
+  color: var(--gold);
+  font-size: 1.1rem;
+}
+
+/* Steps layout */
+.step {
+  margin-bottom: 12px;
+}
+
+/* row helpers */
+.form-row,
+.name-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.name-row .form-group {
+  flex: 1 1 30%;
+  min-width: 120px;
+}
+
+.form-row .form-group {
+  flex: 1 1 48%;
+  min-width: 160px;
+}
+
+/* form groups */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212,175,55,0.06);
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #e6e6e6;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Navigation buttons row */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: #111;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #e6c76c;
+}
+
+.btn-secondary {
+  background: #f3f3f3;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .jumbotron {
+    flex-direction: column;
+    background: #0d0d0d;
+  }
+  .jumbotron-left {
+    padding: 30px;
+  }
+  .jumbotron-right {
+    padding: 20px;
+  }
+  .form-shell {
+    max-width: 640px;
+  }
+  .form-row .form-group,
+  .name-row .form-group {
+    flex: 1 1 100%;
+  }
+}
+
+/* small screens */
+@media (max-width: 480px) {
+  .header-container { padding: 10px 16px; }
+  .jumbotron-left { padding: 20px; }
+  .jumbotron-right { padding: 16px; }
+  .form-shell { padding: 16px; }
+  .progress-info { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+
+/* Make dropdowns match dark input style */
+.form-group select {
+  background: #111;
+  color: #fff;
+  border: 1px solid #444;
+}
+.form-group select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212,175,55,0.1);
+}
+
+/* Change “Step X of 5” label to white */
+.step-label {
+  color: #fff !important;
+}
+
+/* Upload preview */
+.file-preview {
+  margin-top: 8px;
+  text-align: center;
+}
+.file-preview img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--gold);
+}

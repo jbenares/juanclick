@@ -1,0 +1,218 @@
+/* Jumbotron Layout */
+.jumbotron-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d0d0d;
+  color: #fff;
+  padding: 50px 5%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left Section */
+.jumbotron-header {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+/* Right Section */
+.jumbotron-right {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background: #6e6c6c;
+  padding: 20px 35px;
+  border-radius: 12px;
+  width:550px;
+  box-shadow: 0px 0px 15px rgba(212, 175, 55, 0.25);
+  text-align: center;
+  border: 1px solid #d4af37;
+  position: relative;
+}
+
+.pass-reg-form {
+  background: #6e6c6c;
+  padding: 20px 35px;
+  border-radius: 12px;
+  width:550px;
+  box-shadow: 0px 0px 15px rgba(212, 175, 55, 0.25);
+  text-align: center;
+  border: 1px solid #d4af37;
+  position: relative;
+}
+
+.pass-reg-form h3 {
+  color: #d4af37;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Logo */
+.login-logo {
+  width: 150px;
+}
+
+/* Heading */
+.login-form h3 {
+  color: #d4af37;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.form-group {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #e6e6e6;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #111;
+  color: #fff;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+/* Login Button */
+.btn-fill {
+  background: #d4af37;
+  border: none;
+  color: #111;
+  margin-top: 6px;
+}
+
+.btn-fill:hover {
+  background: #e6c76c;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4af37;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 12px 0 10px;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #d4af37;
+  margin: 0 10px;
+}
+
+/* Social Buttons */
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-bottom: 6px; /* tighter spacing between email & facebook */
+}
+
+.email-btn {
+  background: #2a2a2a;
+  color: #f2f2f2;
+  border: 1px solid #444;
+}
+
+.email-btn:hover {
+  background: #333;
+}
+
+.facebook-btn {
+  background: #1877F2;
+  color: #fff;
+  border: none;
+}
+
+.facebook-btn:hover {
+  background: #0e63c7;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Register Links */
+.register-links {
+  margin-top: -2px; /* moved closer to gold border */
+  font-size: 0.9rem;
+  color: #ddd;
+  position: relative;
+}
+
+.register-link {
+  color: #d4af37;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+/* Arrange first, middle, and last name in a row */
+.name-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.name-group .form-group {
+  flex: 1;
+  min-width: 120px;
+}
+
+.name-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+.register-links label {
+  display: block;
+  margin-bottom: 8px; /* adds space below the label */
+}
+
