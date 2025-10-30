@@ -2,38 +2,46 @@ import { createRouter, createWebHistory } from "vue-router";
 
 
 // import notFound from '../pages/notFound.vue'
-import dashboard from '../pages/dashboard.vue'
-import RegisterPassenger from '../passenger/passenger_registration.vue'
-import RegisterDriver from '../driver/driver_registration.vue'
-import RoomandSuites from '../pages/roomsandsuites.vue'
-import Facilities from '../pages/facilities.vue'
-import ContactPage from '../pages/contact_page.vue'
+import Login from '../login.vue'
+import Dashboard from '../dashboard.vue'
+import ServicesRegistration from '../services_registration.vue'
+import AvailableServices from '../available_services.vue'
+//Driver
+import DriverDashboard from '../driver/driver_dashboard.vue'
+import DriverBooking from '../driver/driver_booking.vue'
+//User
+import UserDashboard from '../user/user_dashboard.vue'
 
 const routes = [
     {
         path:'/',
-        component: dashboard,
+        component: Login,
     },
     {
-        path:'/register_passenger',
-        component: RegisterPassenger,
-    },
-        {
-        path:'/register_driver',
-        component: RegisterDriver,
+        path:'/dashboard',
+        component: Dashboard,
     },
     {
-        path:'/roomandsuites',
-        component: RoomandSuites,
+        path:'/services_registration',
+        component: ServicesRegistration,
     },
     {
-        path:'/facilities',
-        component: Facilities,
+        path:'/available_services',
+        component: AvailableServices,
     },
     {
-        path:'/contact_page',
-        component: ContactPage,
+        path:'/user_dash',
+        component: UserDashboard,
     },
+    {
+        path:'/driver_dash',
+        component: DriverDashboard,
+    },
+    {
+        path:'/driver_booking',
+        component: DriverBooking,
+    },
+
     // {
     //     path:'/:pathMatch(.*)*',
     //     name:'notFound',

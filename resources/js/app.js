@@ -8,7 +8,7 @@ import '../css/app.css';
 
 
 import { createApp } from 'vue';
-import app from './pages/app.vue';
+import app from './app.vue';
 import router from './router/index.js';
 
 createApp(app).use(router).mount("#app");
